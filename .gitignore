@@ -1,0 +1,20 @@
+#Ignore everything
+**
+
+#Don't ignore these files
+!.gitignore
+!.cproject
+!.project
+!.mxproject
+!L432KC_Robot.ioc
+!STM32L432KCUX_FLASH.ld
+
+#Don't ignore these folders (and the files inside them)
+!3D_models/
+!3D_models/**
+!Core/
+!Core/**
+!Drivers/
+!Drivers/**
+!kicad_files/
+!kicad_files/**
