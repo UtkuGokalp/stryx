@@ -1,1 +1,0 @@
-All of the parts were printed using eSun Basic White PLA with default settings of BambuStudio slicer software on a Bambu Lab P1S.
