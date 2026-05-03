@@ -17,4 +17,8 @@
 !Drivers/
 !Drivers/**
 !kicad_files/
-!kicad_files/**
+!kicad_files/*
+
+#Do ignore backups and lock files that are there only when KiCad is open
+kicad_files/stryx_backups
+kicad_files/~stryx.kicad_sch.lck
