@@ -18,6 +18,10 @@
 !Drivers/**
 !kicad_files/
 !kicad_files/*
+!Middlewares/
+!Middlewares/**
+!USB_DEVICE/
+!USB_DEVICE/**
 
 #Do ignore backups and lock files that are there only when KiCad is open
 kicad_files/stryx_backups
