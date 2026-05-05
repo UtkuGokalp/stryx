@@ -35,6 +35,7 @@ Current plans to improve this project are in the following order:
 |-----|-----|
 |Mid-size breadboard|1|
 |STM32 Nucleo L432KC Dev Board|1|
+|USB Micro-B breakout board|1|
 |TB6612FNG Module|1|
 |12V 250RPM DC Motors|2|
 |Omnidirectional Wheels|2|
