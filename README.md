@@ -4,6 +4,7 @@ Stryx is a 3D printable wheeled robot designed as a platform for embedded softwa
  - A power system that handles multiple power rails
  - An STM32 MCU (Nucleo L432KC) for controlling motors, sensors and potential future hardwares
  - An ultrasonic sensor for detecting obstacles
+ - USB Connectivity
  - A modular platform that allows secure mounting
  - Various custom mounts
 
@@ -14,6 +15,7 @@ Stryx is a 3D printable wheeled robot designed as a platform for embedded softwa
  - STM32 Nucleo L432KC MCU for real time control
  - Basic obstacle avoidance (to be improved)
  - Designed to be built on a mid-size breadboard for ease of prototyping and compactness
+ - USB connectivity for universal communication (to be integrated better)
 
 # Pictures and Videos
 TO BE ADDED
