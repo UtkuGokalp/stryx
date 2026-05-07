@@ -8,6 +8,9 @@
 !.mxproject
 !L432KC_Robot.ioc
 !STM32L432KCUX_FLASH.ld
+!stryx_bottom.jpg
+!stryx_front.jpg
+!stryx_top.jpg
 
 #Don't ignore these folders (and the files inside them)
 !3D_models/
