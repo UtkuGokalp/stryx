@@ -9,13 +9,13 @@
 #include "HCSR04.h"
 #include "stdbool.h"
 
-#define BUFFER_SIZE 16
+#define BUFFER_SIZE 3
 
 extern TIM_HandleTypeDef htim2;
 extern TIM_HandleTypeDef htim6;
 extern TIM_HandleTypeDef htim15;
-static bool calculatingDistance = false;
-uint32_t pulseLengths[BUFFER_SIZE] = { 0 };
+
+float distances[BUFFER_SIZE] = { 0 };
 
 void InitDistanceSensor(void)
 {
@@ -35,11 +35,6 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef* htim)
 {
 	if (htim == &htim2)
 	{
-		if (calculatingDistance)
-		{
-			//Don't interfere if there is a currently ongoing calculation
-			return;
-		}
 		static uint32_t pulseStart = 0, pulseEnd = 0;
 		static int bufferIndex = 0;
 		static bool isRisingEdge = true; //First edge of HCSR04 is a rising edge
@@ -57,27 +52,28 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef* htim)
 				//Edge case but I've seen it happen. If it happens, simply ignore it
 				return;
 			}
-			pulseLengths[bufferIndex] = pulseEnd - pulseStart;
-			bufferIndex = (bufferIndex + 1) % BUFFER_SIZE;
-
+			uint32_t pulseLength = pulseEnd - pulseStart;
+			float distance_um = (pulseLength * 340.0f) / 2.0f; //Calculation from the datasheet based on the speed of sound
+			float distance_cm = distance_um / 1e4; //Convert to cm
+			if (distance_cm >= 2.0f && distance_cm <= 400.0f)
+			{
+				//The range of the sensor is between 2 and 400 cm. Reject anything else.
+				distances[bufferIndex] = distance_cm;
+				bufferIndex = (bufferIndex + 1) % BUFFER_SIZE;
+			}
 		}
 		isRisingEdge = !isRisingEdge;
 	}
 }
 
+int median3(int a, int b, int c) {
+    if (a > b) { int t = a; a = b; b = t; }
+    if (b > c) { int t = b; b = c; c = t; }
+    if (a > b) { int t = a; a = b; b = t; }
+    return b;
+}
+
 float get_distance_cm(void)
 {
-	//As long as buffer size is small enough, the CPU can loop through it to calculate the sum.
-	//TODO: Maybe make this more efficient by storing a sum or something.
-	calculatingDistance = true;
-	uint32_t sum = 0;
-	for (int i = 0; i < BUFFER_SIZE; i++)
-	{
-		sum += pulseLengths[i];
-	}
-	float avg = (float)sum / BUFFER_SIZE;
-	float distance_um = (avg * 340.0f) / 2.0f; //Calculation from the datasheet (sound of speed [m/s] in air divided by 2)
-	calculatingDistance = false;
-	return distance_um / 1e4; //Convert to cm
-
+	return median3(distances[0], distances[1], distances[2]);
 }

@@ -57,21 +57,15 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim)
 	else if (htim->Instance == TIM6) //If distance needs to be measured again
 	{
 		StartDistanceMeasurement();
-	}
-	else if (htim->Instance == TIM16)
-	{
 		distance_cm = get_distance_cm(); //Calculate distance
 	}
 }
-
-extern TIM_HandleTypeDef htim16;
 
 void robot_main(void)
 {
 	InitMotors();
 	InitBatteryMonitor();
 	InitDistanceSensor();
-	HAL_TIM_Base_Start_IT(&htim16);
 
 	while (1)
 	{
@@ -81,11 +75,12 @@ void robot_main(void)
 		}
 		else
 		{
+			StopMotor(MOTOR_A | MOTOR_B);
 			//Wall detected, turn around
-			move_backward(128);
-			HAL_Delay(1000);
-			turn_left(128);
-			HAL_Delay(1000);
+			//move_backward(128);
+			//HAL_Delay(1000);
+			//turn_left(128);
+			//HAL_Delay(2000);
 		}
 	}
 }
