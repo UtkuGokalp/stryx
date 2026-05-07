@@ -18,9 +18,17 @@ Stryx is a 3D printable wheeled robot designed as a platform for embedded softwa
  - Designed to be built on a mid-size breadboard for ease of prototyping and compactness
  - USB connectivity for universal communication (to be integrated better)
 
-# Pictures and Videos
+# Pictures
+Below are the front, top and bottom views of Stryx.
+![Front view of Stryx v1](stryx_front.jpg)
+
+![Top view of Stryx v1](stryx_top.jpg)
+
+![Bottom view of Stryx v1](stryx_bottom.jpg)
+
+# Videos
   - A video of Stryx moving can be viewed [here](https://youtube.com/shorts/t5ViIWTwRgw?feature=share).
-  - A video of Stryx detecting my hand through the ultrasonic sensor can be viewed [here](https://youtu.be/18g5bbReIh8).
+  - A video of Stryx detection through the ultrasonic sensor can be viewed [here](https://youtu.be/18g5bbReIh8).
 
 # Roadmap
 Current plans to improve this project are in the following order:
@@ -31,7 +39,6 @@ Current plans to improve this project are in the following order:
    3. Or sensors that use different technologies such as IR or LiDAR
 
 # Parts List
-
 |Name|Amount|
 |-----|-----|
 |Mid-size breadboard|1|
