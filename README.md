@@ -32,7 +32,8 @@ Below are the front, top and bottom views of Stryx.
 
 # Roadmap
 Current plans to improve this project are in the following order:
- - Manual control combined with autonomous behavior for avoiding obstacles
+ - Manual wireless control implementation
+ - Manual control combined with autonomous behavior for collision avoidance
  - Better sensing of environment with either
    1. More sensors
    2. Servos that control the orientation of sensors
