@@ -13,7 +13,6 @@
 #define BUFF_SIZE 8
 
 extern ADC_HandleTypeDef hadc1;
-extern TIM_HandleTypeDef htim7;
 static uint16_t buff[BUFF_SIZE] = { 0 };
 uint8_t percentage = 0;
 
@@ -21,7 +20,6 @@ void InitBatteryMonitor(void)
 {
 	HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
 	HAL_ADC_Start_DMA(&hadc1, (uint32_t*)buff, BUFF_SIZE);
-	HAL_TIM_Base_Start_IT(&htim7);
 }
 
 uint8_t GetBatteryPercent(void)

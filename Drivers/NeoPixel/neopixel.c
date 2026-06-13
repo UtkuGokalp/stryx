@@ -14,6 +14,19 @@ extern TIM_HandleTypeDef htim1;
 //the array (and the size passed to HAL_TIM_PWM_Start_DMA) is 28, it sends 24 bits
 uint8_t packets[28] = { 0 };
 
+void ResetPWMDutyCycle(TIM_HandleTypeDef *htim)
+{
+	//htim is expected to be timer 1
+	//no if statements are used because HAL_TIM_RegisterCallback
+	//is called with timer1 as its parameter
+	__HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_1, 0);
+}
+
+void init_neopixel_driver(void)
+{
+	HAL_TIM_RegisterCallback(&htim1, HAL_TIM_PWM_PULSE_FINISHED_CB_ID, ResetPWMDutyCycle);
+}
+
 void send_neopixel_signal(uint8_t r, uint8_t g, uint8_t b)
 {
 	uint32_t packet = (b << 16) | (r << 8) | g;
@@ -33,10 +46,4 @@ void send_neopixel_signal(uint8_t r, uint8_t g, uint8_t b)
 	HAL_TIM_PWM_Start_DMA(&htim1, TIM_CHANNEL_1, (uint32_t*)packets, 28);
 }
 
-void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim)
-{
-	if (htim == &htim1)
-	{
-		__HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_1, 0);
-	}
-}
+

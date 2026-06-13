@@ -9,7 +9,6 @@
 #define HCSR04_HCSR04_H_
 
 void InitDistanceSensor(void);
-void StartDistanceMeasurement(void);
-float get_distance_cm(void);
+float GetDistanceInCm(void);
 
 #endif /* HCSR04_HCSR04_H_ */
