@@ -11,15 +11,19 @@
 #include "HCSR04.h"
 #include "movement.h"
 #include "motors.h"
+#include "nRF24L01.h"
 
 void robot_main(void)
 {
 	InitMotors();
 	InitBatteryDisplay();
 	InitDistanceSensor();
+	InitRadio();
 
 	while (1)
 	{
+		InitRadio(); //Here for testing, remove once done!!!
+
 		if (GetDistanceInCm() >= 20.0f)
 		{
 			move_forward(128);

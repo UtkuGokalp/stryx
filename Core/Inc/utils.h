@@ -10,6 +10,8 @@
 
 #include <stdint.h>
 
+#define asize(a)	(sizeof(a) / sizeof(a[0]))
+
 static inline uint32_t map(uint32_t value, uint32_t minIn, uint32_t maxIn, uint32_t minOut, uint32_t maxOut)
 {
 	if (value < minIn)

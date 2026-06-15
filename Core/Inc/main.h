@@ -61,6 +61,8 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define HCSR04_Echo_Pin GPIO_PIN_0
 #define HCSR04_Echo_GPIO_Port GPIOA
+#define nRF24L01_IRQ_Pin GPIO_PIN_1
+#define nRF24L01_IRQ_GPIO_Port GPIOA
 #define HCSR04_Trig_Pin GPIO_PIN_2
 #define HCSR04_Trig_GPIO_Port GPIOA
 #define nRF24L01_CSN_Pin GPIO_PIN_3
@@ -79,10 +81,6 @@ void Error_Handler(void);
 #define MotorB_PWM_GPIO_Port GPIOA
 #define MotorA_PWM_Pin GPIO_PIN_10
 #define MotorA_PWM_GPIO_Port GPIOA
-#define Onboard_LED_Pin GPIO_PIN_3
-#define Onboard_LED_GPIO_Port GPIOB
-#define nRF24L01_IRQ_Pin GPIO_PIN_4
-#define nRF24L01_IRQ_GPIO_Port GPIOB
 #define MotorB_In1_Pin GPIO_PIN_6
 #define MotorB_In1_GPIO_Port GPIOB
 #define MotorB_In2_Pin GPIO_PIN_7
