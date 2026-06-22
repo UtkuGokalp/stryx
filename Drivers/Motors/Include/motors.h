@@ -10,6 +10,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
+
 typedef enum
 {
 	MOTOR_NONE = 0,
@@ -23,6 +24,6 @@ void BrakeMotor(MOTOR motor);
 void SetMotorDirection(MOTOR motor, bool forward);
 void SetMotorDirection_CCW(MOTOR motor);
 void SetMotorDirection_CW(MOTOR motor);
-void SetMotorSpeed(MOTOR motor, uint8_t speed);
+void SetMotorSpeed(MOTOR motor, uint8_t speed, bool forward);
 
 #endif /* MOTORS_INCLUDE_MOTORS_H_ */

@@ -50,7 +50,7 @@
 
 extern SPI_HandleTypeDef hspi3;
 
-HAL_StatusTypeDef SendCommand(uint8_t command, uint8_t* data_bytes, size_t data_byte_count, uint8_t* received_data)
+static HAL_StatusTypeDef SendCommand(uint8_t command, uint8_t* data_bytes, size_t data_byte_count, uint8_t* received_data)
 {
 	if (data_byte_count > MAX_DATA_BYTE_COUNT)
 	{
@@ -85,7 +85,7 @@ HAL_StatusTypeDef SendCommand(uint8_t command, uint8_t* data_bytes, size_t data_
 //The caller is responsible for making sure result pointer points to a memory location that can
 //actually hold the amount of bytes necessary.
 //The result is in little endian.
-void ReadRegister(uint8_t reg, uint8_t bytesCount, uint8_t* result)
+static void ReadRegister(uint8_t reg, uint8_t bytesCount, uint8_t* result)
 {
 	#define MAX_REGISTER_WIDTH_IN_BYTES		5
 
@@ -99,14 +99,21 @@ void ReadRegister(uint8_t reg, uint8_t bytesCount, uint8_t* result)
 	#undef MAX_REGISTER_WIDTH_IN_BYTES
 }
 
-void WriteRegister(uint8_t reg, uint8_t* data, size_t byteCount)
+static void WriteRegister(uint8_t reg, uint8_t* data, size_t byteCount)
 {
 	SendCommand(WRITE_REGISTER_CMD(reg), data, byteCount, NULL);
 }
 
+//From the datasheet: Should not be executed during transmission
+//of ACK, that is, ACK package will not be completed
+static void FlushRxFIFO(void)
+{
+	SendCommand(FLUSH_RX_CMD, NULL, 0, NULL);
+}
+
 //A buffer of sizeof(radiopacket_t) bytes is expected.
 //TODO: Try to optimize this implementation
-void ReadRxPayload(uint8_t* result_buffer)
+static void ReadRxPayload(uint8_t* result_buffer)
 {
 	//Pause listening while reading RX FIFO
 	HAL_GPIO_WritePin(nRF24L01_CE_GPIO_Port, nRF24L01_CE_Pin, GPIO_PIN_RESET);
@@ -126,18 +133,15 @@ void ReadRxPayload(uint8_t* result_buffer)
 	uint8_t value = 0x70; //Clear all interrupt flags
 	WriteRegister(REG_STATUS, &value, 1);
 
+	//Flush the FIFO in case we cannot process the packets fast enough (mainly the case during
+	//development). Packets are coming every 5ms, it should be fine if we miss a couple
+	FlushRxFIFO();
+
 	//Resume listening
 	HAL_GPIO_WritePin(nRF24L01_CE_GPIO_Port, nRF24L01_CE_Pin, GPIO_PIN_SET);
 }
 
-//From the datasheet: Should not be executed during transmission
-//of ACK, that is, ACK package will not be completed
-void FlushRxFIFO(void)
-{
-	SendCommand(FLUSH_RX_CMD, NULL, 0, NULL);
-}
-
-void NOP(void)
+static void NOP(void)
 {
 	SendCommand(NOP_CMD, NULL, 0, NULL);
 }
@@ -246,33 +250,6 @@ void ReadPacket(radiopacket_t* packet)
 		*packet = *(radiopacket_t*)buffer;
 	}
 }
-
-/*
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-	if (GPIO_Pin == nRF24L01_IRQ_Pin)
-	{
-		//TODO: Check FIFO_STATUS (0x17) register to see if the RX FIFO is full. If it ever is,
-		//it means we are unable to process the incoming data fast enough!
-		//char msg[32] = { 0 };
-		//sprintf(msg, "Data available on RX FIFO\n");
-		//CDC_Transmit_FS((uint8_t*)msg, strlen(msg));
-		//A new packet is received, process it
-		//uint8_t result[12] = { 0 };
-		//ReadRxPayload(result);
-		//radiopacket_t packet = *(radiopacket_t*)result;
-		//(void)packet;
-
-		//TODO: Set internal flag as data ready
-
-		//Write 1 to bit 6 to notify the chip that we handled the interrupt
-		uint8_t value = 0;
-		ReadRegister(REG_STATUS, 1, &value);
-		value |= 0x40;
-		WriteRegister(REG_STATUS, &value, 1);
-	}
-}
-*/
 
 void PrintRegisters(void)
 {

@@ -14,7 +14,7 @@ extern TIM_HandleTypeDef htim1;
 void InitMotors(void)
 {
 	StopMotor(MOTOR_A | MOTOR_B); //Ensure the GPIO is set to that the motors will start stopped.
-	SetMotorSpeed(MOTOR_A | MOTOR_B, 0); //Ensure the PWM duty cycles are set to 0 before starting the timers.
+	SetMotorSpeed(MOTOR_A | MOTOR_B, 0, true); //Ensure the PWM duty cycles are set to 0 before starting the timers.
 	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
 	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
 }
@@ -116,8 +116,12 @@ void SetMotorDirection_CW(MOTOR motor)
 	}
 }
 
-void SetMotorSpeed(MOTOR motor, uint8_t speed)
+void SetMotorSpeed(MOTOR motor, uint8_t speed, bool forward)
 {
+	//The direction needs to be set first in order to make
+	//sure the motors are set to moving and not stopping
+	SetMotorDirection(motor, forward);
+
 	uint32_t ccr = map(speed, 0, 255, 0, htim1.Instance->ARR + 1);
 	if (motor == MOTOR_A)
 	{
@@ -129,7 +133,7 @@ void SetMotorSpeed(MOTOR motor, uint8_t speed)
 	}
 	else if (motor == (MOTOR_A | MOTOR_B))
 	{
-		SetMotorSpeed(MOTOR_A, speed);
-		SetMotorSpeed(MOTOR_B, speed);
+		SetMotorSpeed(MOTOR_A, speed, forward);
+		SetMotorSpeed(MOTOR_B, speed, forward);
 	}
 }

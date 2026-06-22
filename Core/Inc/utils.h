@@ -27,4 +27,17 @@ static inline uint32_t map(uint32_t value, uint32_t minIn, uint32_t maxIn, uint3
 	return minOut + ((float)(maxOut - minOut) / (maxIn- minIn)) * (value - minIn);
 }
 
+static inline int32_t clamp(int32_t value, int32_t min, int32_t max)
+{
+	if (value < min)
+	{
+		value = min;
+	}
+	else if (value > max)
+	{
+		value = max;
+	}
+	return value;
+}
+
 #endif /* INC_UTILS_H_ */

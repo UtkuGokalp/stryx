@@ -10,28 +10,24 @@
 
 void move_forward(uint8_t speed)
 {
-	SetMotorDirection(MOTOR_A | MOTOR_B, true);
-	SetMotorSpeed(MOTOR_A, speed);
-	SetMotorSpeed(MOTOR_B, speed);
+	SetMotorSpeed(MOTOR_A, speed, true);
+	SetMotorSpeed(MOTOR_B, speed, true);
 }
 
 void move_backward(uint8_t speed)
 {
-	SetMotorDirection(MOTOR_A | MOTOR_B, false);
-	SetMotorSpeed(MOTOR_A, speed);
-	SetMotorSpeed(MOTOR_B, speed);
+	SetMotorSpeed(MOTOR_A, speed, false);
+	SetMotorSpeed(MOTOR_B, speed, false);
 }
 
 void turn_right(uint8_t speed)
 {
-	SetMotorDirection(MOTOR_A | MOTOR_B, true);
-	SetMotorSpeed(MOTOR_A, speed);
-	SetMotorSpeed(MOTOR_B, 0);
+	SetMotorSpeed(MOTOR_A, speed, true);
+	SetMotorSpeed(MOTOR_B, 0, true);
 }
 
 void turn_left(uint8_t speed)
 {
-	SetMotorDirection(MOTOR_A | MOTOR_B, true);
-	SetMotorSpeed(MOTOR_A, 0);
-	SetMotorSpeed(MOTOR_B, speed);
+	SetMotorSpeed(MOTOR_A, 0, true);
+	SetMotorSpeed(MOTOR_B, speed, true);
 }
