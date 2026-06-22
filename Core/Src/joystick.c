@@ -33,9 +33,7 @@ static void setMotorSigned(int16_t value, MOTOR motor)
     	forward = false;
     	value = -value;
     }
-    value = map(value, 0, 512, 0, 255);
-
-    SetMotorSpeed((uint8_t)value, motor, forward);
+    SetMotorSpeed(motor, (uint8_t)value, forward);
 }
 
 void DriveFromJoystick(uint16_t joyX, uint16_t joyY)
@@ -50,13 +48,13 @@ void DriveFromJoystick(uint16_t joyX, uint16_t joyY)
     y = applyDeadzone(y);
 
     // Optional scaling to avoid diagonal overdrive
-    int32_t left  = clamp(y, -512, 512); //y + x
-    int32_t right = clamp(y, -512, 512); //y - x
+    int32_t left  = clamp(y + x, -512, 512); //y + x
+    int32_t right = clamp(y - x, -512, 512); //y - x
 
     // Scale -512..512 → 0..255
     left  = (left  * 255) / 512;
     right = (right * 255) / 512;
 
-    setMotorSigned(left,  MOTOR_B);
-    setMotorSigned(right, MOTOR_A);
+    setMotorSigned(left,  MOTOR_A);
+    setMotorSigned(right, MOTOR_B);
 }

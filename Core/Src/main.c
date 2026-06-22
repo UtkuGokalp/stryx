@@ -75,7 +75,15 @@ static void MX_SPI3_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+//This function retargets the stdout to the USB peripheral
+//so that printf will work normally (except it needs to be
+//viewed from a serial terminal).
+#include "usbd_cdc_if.h"
+int _write(int file, char* ptr, int len)
+{
+	CDC_Transmit_FS((uint8_t*)ptr, len);
+	return len;
+}
 /* USER CODE END 0 */
 
 /**
