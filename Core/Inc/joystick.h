@@ -10,6 +10,8 @@
 
 #include <stdint.h>
 
+#define JOYSTICK_DEADZONE   30
+
 void DriveFromJoystick(uint16_t joyX, uint16_t joyY);
 
 #endif /* INC_JOYSTICK_H_ */

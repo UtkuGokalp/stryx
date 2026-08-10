@@ -24,24 +24,35 @@ void robot_main(void)
 
 	while (1)
 	{
-		if (IsPacketReady())
-		{
-			ReadPacket(&joystick_info);
+		//if (GetDistanceInCm() <= 20.0f) //Detected obstacle
+		//{
+		//	if (joystick_info.y_right > JOYSTICK_DEADZONE) //If the user is trying to go forward
+		//	{
+		//		//Go back a bit
+		//		StopMotor(MOTOR_A | MOTOR_B);
+		//		HAL_Delay(50); //Wait for the motors to be done with inertia
+		//		move_backward(128);
+		//		HAL_Delay(1000);
+		//		StopMotor(MOTOR_A | MOTOR_B);
+		//	}
+		//}
+		//else
+		//{
+			if (IsPacketReady())
+			{
+				ReadPacket(&joystick_info);
+			}
+			if (GetDistanceInCm() <= 20.0f)
+			{
+				//joystick_info.y_right = 0;
+				//Go back a bit
+				StopMotor(MOTOR_A | MOTOR_B);
+				HAL_Delay(50); //Wait for the motors to be done with inertia
+				move_backward(128);
+				HAL_Delay(1000);
+				StopMotor(MOTOR_A | MOTOR_B);
+			}
 			DriveFromJoystick(joystick_info.x_right, joystick_info.y_right);
-		}
-
-		/*if (GetDistanceInCm() <= 20.0f)
-		{
-			//Detected obstacle, go back a bit
-			//StopMotor(MOTOR_A | MOTOR_B);
-			//HAL_Delay(50); //Wait for the motors to be done with inertia
-			//move_backward(128);
-			//HAL_Delay(1000);
-			//StopMotor(MOTOR_A | MOTOR_B);
-		}
-		else
-		{
-			//DriveFromJoystick(joystick_info.x_right, joystick_info.y_right);
-		}*/
+		//}
 	}
 }

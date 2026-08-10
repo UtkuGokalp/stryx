@@ -10,11 +10,10 @@
 #include "utils.h"
 
 #define JOY_CENTER 512
-#define DEADZONE   30
 
 static int16_t applyDeadzone(int16_t v)
 {
-    if (v > -DEADZONE && v < DEADZONE)
+    if (v > -JOYSTICK_DEADZONE && v < JOYSTICK_DEADZONE)
         return 0;
     return v;
 }
