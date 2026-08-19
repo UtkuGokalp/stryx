@@ -29,6 +29,7 @@ Below are the front, top and bottom views of Stryx.
 # Videos
   - A video of Stryx moving can be viewed [here](https://youtube.com/shorts/t5ViIWTwRgw?feature=share).
   - A video of Stryx detection through the ultrasonic sensor can be viewed [here](https://youtu.be/18g5bbReIh8).
+ - A video of Stryx being controlled by a custom controller can be viewed [here](https://youtube.com/shorts/JMSHhV6Dkls?si=vsp8z5HZcUrGIarE).
 
 # Roadmap
 Current plans to improve this project are in the following order:
