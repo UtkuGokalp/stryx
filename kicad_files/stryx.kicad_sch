@@ -8,6 +8,212 @@
 		(title "Stryx Circuit Schematic")
 	)
 	(lib_symbols
+		(symbol "Connector:Screw_Terminal_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Screw_Terminal_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "screw terminal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TerminalBlock*:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Screw_Terminal_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:USB_B_Micro"
 			(pin_names
 				(offset 1.016)
@@ -1727,207 +1933,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Motor:Motor_DC"
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "M"
-				(at 2.54 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Motor_DC"
-				(at 2.54 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 -2.286 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 -2.286 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "DC Motor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "DC Motor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "PinHeader*P2.54mm* TerminalBlock*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Motor_DC_0_0"
-				(polyline
-					(pts
-						(xy -1.27 -3.302) (xy -1.27 0.508) (xy 0 -2.032) (xy 1.27 0.508) (xy 1.27 -3.302)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Motor_DC_0_1"
-				(polyline
-					(pts
-						(xy 0 2.032) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.7272) (xy 0 2.0828)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -1.524)
-					(radius 3.2512)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -4.7752) (xy 0 -5.1816)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -7.62) (xy 0 -7.112)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Motor_DC_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4388,10 +4393,10 @@
 		(at 100.33 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4f051ebe-7395-4aae-9bb2-9f6b2a662040")
+		(uuid "2a31fbda-1a64-4a90-93f6-aacf19772417")
 	)
 	(junction
-		(at 25.4 132.08)
+		(at 25.4 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d414e8a-7ac4-4891-917b-eaa3e65e29b4")
@@ -4415,7 +4420,7 @@
 		(uuid "71bea368-6345-4018-a56b-51859bf9f6af")
 	)
 	(junction
-		(at 25.4 139.7)
+		(at 25.4 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "73cc7f54-a386-43ca-ac99-13df77a0b5b8")
@@ -4468,13 +4473,13 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 31.75) (xy 68.58 35.56)
+			(xy 92.71 134.62) (xy 100.33 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "020ca21d-d231-4c8f-826f-d560ec31de68")
+		(uuid "0297635e-cb7e-48f6-825b-730328c3a454")
 	)
 	(wire
 		(pts
@@ -4538,7 +4543,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 132.08) (xy 53.34 134.62)
+			(xy 53.34 168.91) (xy 53.34 171.45)
 		)
 		(stroke
 			(width 0)
@@ -4548,23 +4553,13 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 132.08) (xy 25.4 132.08)
+			(xy 53.34 168.91) (xy 25.4 168.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1259ceaa-b0b7-4ca8-9d78-2b31beb15331")
-	)
-	(wire
-		(pts
-			(xy 115.57 158.75) (xy 115.57 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "139267fe-c2d6-412d-a988-fd9a6d70589f")
 	)
 	(wire
 		(pts
@@ -4578,7 +4573,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 147.32) (xy 53.34 147.32)
+			(xy 25.4 184.15) (xy 53.34 184.15)
 		)
 		(stroke
 			(width 0)
@@ -4608,16 +4603,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 35.56) (xy 106.68 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2039c828-71e4-4d16-9e44-456c3ea5ed45")
-	)
-	(wire
-		(pts
 			(xy 157.48 105.41) (xy 162.56 105.41)
 		)
 		(stroke
@@ -4625,16 +4610,6 @@
 			(type default)
 		)
 		(uuid "2048405b-ef99-4ce0-bcf7-d1a8e756854c")
-	)
-	(wire
-		(pts
-			(xy 68.58 22.86) (xy 68.58 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21277bbe-a3be-45c7-8984-b3abf525dc36")
 	)
 	(wire
 		(pts
@@ -4685,6 +4660,26 @@
 			(type default)
 		)
 		(uuid "35416275-92bd-4dc4-8ce9-588233c6781d")
+	)
+	(wire
+		(pts
+			(xy 115.57 157.48) (xy 115.57 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3571e861-baeb-4046-8d66-403bae3be876")
+	)
+	(wire
+		(pts
+			(xy 78.74 35.56) (xy 106.68 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "369b7ee8-0a17-4266-a0c5-58d964415e2a")
 	)
 	(wire
 		(pts
@@ -4868,23 +4863,13 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 140.97) (xy 87.63 147.32)
+			(xy 87.63 177.8) (xy 87.63 184.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5796512c-b867-429e-94df-51c042b48031")
-	)
-	(wire
-		(pts
-			(xy 106.68 25.4) (xy 106.68 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58d1ce59-54d6-45dd-bed2-da00ff749a50")
 	)
 	(wire
 		(pts
@@ -4918,7 +4903,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 124.46) (xy 25.4 124.46)
+			(xy 53.34 161.29) (xy 25.4 161.29)
 		)
 		(stroke
 			(width 0)
@@ -4948,7 +4933,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 147.32) (xy 53.34 142.24)
+			(xy 53.34 184.15) (xy 53.34 179.07)
 		)
 		(stroke
 			(width 0)
@@ -4978,7 +4963,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 130.81) (xy 53.34 124.46)
+			(xy 53.34 167.64) (xy 53.34 161.29)
 		)
 		(stroke
 			(width 0)
@@ -5058,16 +5043,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 27.94) (xy 81.28 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81ffb9eb-44cd-4ef4-90c4-232ae743d72e")
-	)
-	(wire
-		(pts
 			(xy 194.31 53.34) (xy 215.9 53.34)
 		)
 		(stroke
@@ -5125,16 +5100,6 @@
 			(type default)
 		)
 		(uuid "8e7761fe-db89-4c6c-930e-918a58b0a42d")
-	)
-	(wire
-		(pts
-			(xy 106.68 33.02) (xy 106.68 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "915c829c-f53b-4fbf-aa7f-234424f8a8d8")
 	)
 	(wire
 		(pts
@@ -5278,7 +5243,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 139.7) (xy 53.34 139.7)
+			(xy 25.4 176.53) (xy 53.34 176.53)
 		)
 		(stroke
 			(width 0)
@@ -5368,26 +5333,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 134.62) (xy 100.33 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc880bbd-4dd7-4890-a86c-6b98f1556b66")
-	)
-	(wire
-		(pts
-			(xy 106.68 31.75) (xy 68.58 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bedb52b9-3ccb-406a-8539-c8045ba09615")
-	)
-	(wire
-		(pts
 			(xy 151.13 95.25) (xy 151.13 134.62)
 		)
 		(stroke
@@ -5405,6 +5350,16 @@
 			(type default)
 		)
 		(uuid "c3b41470-609b-470c-8ec1-1c884ffd7a81")
+	)
+	(wire
+		(pts
+			(xy 92.71 27.94) (xy 106.68 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c68e5359-1433-4932-8517-9c86d79a61b0")
 	)
 	(wire
 		(pts
@@ -5488,13 +5443,23 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 139.7) (xy 53.34 138.43)
+			(xy 53.34 176.53) (xy 53.34 175.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "dcec1b70-45d2-4823-bc90-688767904030")
+	)
+	(wire
+		(pts
+			(xy 78.74 33.02) (xy 106.68 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddb789cc-c5e7-45ee-b743-e0b8b25336d2")
 	)
 	(wire
 		(pts
@@ -5668,13 +5633,13 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 22.86) (xy 68.58 22.86)
+			(xy 92.71 25.4) (xy 106.68 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f53cf55d-ab63-4b1d-8c35-73815e68861c")
+		(uuid "f6a757e4-39ee-4738-9460-b9098cb37c62")
 	)
 	(wire
 		(pts
@@ -6052,7 +6017,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 87.63 147.32 0)
+		(at 87.63 184.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6063,7 +6028,7 @@
 		(fields_autoplaced yes)
 		(uuid "0bee84f8-0812-4696-99a2-7a7b1e9fbee8")
 		(property "Reference" "#PWR01"
-			(at 87.63 153.67 0)
+			(at 87.63 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6074,7 +6039,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 87.63 152.4 0)
+			(at 87.63 189.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6084,7 +6049,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 147.32 0)
+			(at 87.63 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6095,7 +6060,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 147.32 0)
+			(at 87.63 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6106,7 +6071,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 87.63 147.32 0)
+			(at 87.63 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6130,7 +6095,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 25.4 127 180)
+		(at 25.4 163.83 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6141,7 +6106,7 @@
 		(fields_autoplaced yes)
 		(uuid "1496440c-e986-4d1c-adcc-77c7df468daf")
 		(property "Reference" "BT3"
-			(at 29.21 127.5714 0)
+			(at 29.21 164.4014 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6152,7 +6117,7 @@
 			)
 		)
 		(property "Value" "18650 Li-ion"
-			(at 29.21 130.1114 0)
+			(at 29.21 166.9414 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6163,7 +6128,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 128.524 90)
+			(at 25.4 165.354 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6174,7 +6139,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 128.524 90)
+			(at 25.4 165.354 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6185,7 +6150,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 25.4 127 0)
+			(at 25.4 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6758,86 +6723,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Motor:Motor_DC")
-		(at 73.66 35.56 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3485fdae-5815-4732-ab62-2e2b011a9f94")
-		(property "Reference" "M2"
-			(at 77.216 43.434 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "12V 250 RPM"
-			(at 86.106 33.528 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 75.946 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 75.946 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "DC Motor"
-			(at 73.66 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a33aca4e-4986-4f5f-8a78-a809943cf447")
-		)
-		(pin "2"
-			(uuid "5eeb2773-b013-4fc6-8d81-a9e89f2e9ae0")
-		)
-		(instances
-			(project "stryx"
-				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "M2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4001")
 		(at 123.19 140.97 270)
 		(unit 1)
@@ -7047,13 +6932,14 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 101.6 21.59 0)
+			(at 104.14 17.7799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7205,7 +7091,7 @@
 	)
 	(symbol
 		(lib_id "ugklp_symlib:3S_BMS")
-		(at 69.85 123.19 0)
+		(at 69.85 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7215,7 +7101,7 @@
 		(dnp no)
 		(uuid "61670ed2-1891-4343-bcd5-7df13723e2ce")
 		(property "Reference" "BMS1"
-			(at 70.485 124.46 0)
+			(at 70.485 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7225,7 +7111,7 @@
 			)
 		)
 		(property "Value" "3S 20A"
-			(at 70.485 127 0)
+			(at 70.485 163.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7235,7 +7121,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 123.19 0)
+			(at 69.85 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7246,7 +7132,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 123.19 0)
+			(at 69.85 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7257,7 +7143,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 69.85 123.19 0)
+			(at 69.85 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7619,7 +7505,7 @@
 	)
 	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 25.4 142.24 180)
+		(at 25.4 179.07 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7630,7 +7516,7 @@
 		(fields_autoplaced yes)
 		(uuid "7666cff7-8a09-4b0e-96bc-892eb6997ea2")
 		(property "Reference" "BT1"
-			(at 29.21 142.8114 0)
+			(at 29.21 179.6414 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7641,7 +7527,7 @@
 			)
 		)
 		(property "Value" "18650 Li-ion"
-			(at 29.21 145.3514 0)
+			(at 29.21 182.1814 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7652,7 +7538,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 143.764 90)
+			(at 25.4 180.594 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7663,7 +7549,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 143.764 90)
+			(at 25.4 180.594 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7674,7 +7560,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 25.4 142.24 0)
+			(at 25.4 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7700,88 +7586,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Motor:Motor_DC")
-		(at 73.66 27.94 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "80866aa1-9eb0-466f-b455-2ce439bbc368")
-		(property "Reference" "M1"
-			(at 76.2 20.32 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "12V 250 RPM"
-			(at 86.106 25.4 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 75.946 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 75.946 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "DC Motor"
-			(at 73.66 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7ead6e0b-7349-4a6f-b47b-0552c948c177")
-		)
-		(pin "2"
-			(uuid "b040e6ed-b2c5-454f-abce-3bb0887370b9")
-		)
-		(instances
-			(project "stryx"
-				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "M1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Battery_Cell")
-		(at 25.4 134.62 180)
+		(at 25.4 171.45 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7792,7 +7598,7 @@
 		(fields_autoplaced yes)
 		(uuid "811a5833-2957-4106-989b-2313e16fdd8e")
 		(property "Reference" "BT2"
-			(at 29.21 135.1914 0)
+			(at 29.21 172.0214 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7803,7 +7609,7 @@
 			)
 		)
 		(property "Value" "18650 Li-ion"
-			(at 29.21 137.7314 0)
+			(at 29.21 174.5614 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7814,7 +7620,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 136.144 90)
+			(at 25.4 172.974 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7825,7 +7631,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 136.144 90)
+			(at 25.4 172.974 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7836,7 +7642,7 @@
 			)
 		)
 		(property "Description" "Single-cell battery"
-			(at 25.4 134.62 0)
+			(at 25.4 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7856,6 +7662,86 @@
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
 					(reference "BT2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 73.66 35.56 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82341498-a75f-44d4-b403-a05257967c7f")
+		(property "Reference" "J1"
+			(at 73.66 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screw_Terminal_M1"
+			(at 73.66 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type703_RT10N02HGLU_1x02_P9.52mm_Horizontal"
+			(at 73.66 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 73.66 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97cb5521-9b8f-4ab1-8cc8-4cbf90a52f40")
+		)
+		(pin "2"
+			(uuid "017d919c-2d43-4f8d-bd4d-e8e2010c630e")
+		)
+		(instances
+			(project "stryx"
+				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -8154,7 +8040,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPDT")
-		(at 92.71 132.08 0)
+		(at 92.71 168.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8165,7 +8051,7 @@
 		(fields_autoplaced yes)
 		(uuid "92acda8e-e782-4936-9c6c-7ec845e92b11")
 		(property "Reference" "SW1"
-			(at 92.71 123.19 0)
+			(at 92.71 160.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8175,7 +8061,7 @@
 			)
 		)
 		(property "Value" "SW_SPDT"
-			(at 92.71 125.73 0)
+			(at 92.71 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8185,7 +8071,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 132.08 0)
+			(at 92.71 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8196,7 +8082,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 139.7 0)
+			(at 92.71 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8207,7 +8093,7 @@
 			)
 		)
 		(property "Description" "Switch, single pole double throw"
-			(at 92.71 132.08 0)
+			(at 92.71 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8312,6 +8198,86 @@
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 87.63 137.16 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a304058e-606e-4ee8-ab34-2b295bbd3280")
+		(property "Reference" "J3"
+			(at 87.63 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screw_Terminal_Power"
+			(at 87.63 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type703_RT10N02HGLU_1x02_P9.52mm_Horizontal"
+			(at 87.63 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 87.63 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a14efb21-3190-40d0-a46a-cdb11df2f152")
+		)
+		(pin "2"
+			(uuid "1abeac70-22f3-4455-b265-9ee07682ad8f")
+		)
+		(instances
+			(project "stryx"
+				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -9005,6 +8971,84 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
+		(at 92.71 137.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf164cc3-396c-41de-826a-57f2a59ef0eb")
+		(property "Reference" "#PWR020"
+			(at 92.71 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 92.71 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 92.71 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "01600117-2aeb-48cb-b3ef-6963b9cb5b3b")
+		)
+		(instances
+			(project "stryx"
+				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
 		(at 194.31 71.12 0)
 		(unit 1)
 		(body_style 1)
@@ -9158,6 +9202,86 @@
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 87.63 27.94 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c633fbd5-ba16-44dc-b47a-04024ced7524")
+		(property "Reference" "J2"
+			(at 87.63 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screw_Terminal_M2"
+			(at 87.63 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type703_RT10N02HGLU_1x02_P9.52mm_Horizontal"
+			(at 87.63 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 87.63 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0acc4df1-d12e-4465-b275-ce9a4dc31671")
+		)
+		(pin "2"
+			(uuid "838c3763-1eea-44b6-a520-40aa3f357b4d")
+		)
+		(instances
+			(project "stryx"
+				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -9451,7 +9575,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 115.57 156.21 0)
+		(at 115.57 157.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9462,7 +9586,7 @@
 		(fields_autoplaced yes)
 		(uuid "d49062c1-5e43-492a-8ec7-be5828f54280")
 		(property "Reference" "#PWR02"
-			(at 115.57 162.56 0)
+			(at 115.57 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9473,7 +9597,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 115.57 161.29 0)
+			(at 115.57 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9483,7 +9607,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 156.21 0)
+			(at 115.57 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9494,7 +9618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 156.21 0)
+			(at 115.57 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9505,7 +9629,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 115.57 156.21 0)
+			(at 115.57 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
