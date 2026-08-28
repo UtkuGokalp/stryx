@@ -21,6 +21,7 @@
 !Drivers/**
 !kicad_files/
 !kicad_files/*
+!kicad_files/**
 !Middlewares/
 !Middlewares/**
 !USB_DEVICE/
