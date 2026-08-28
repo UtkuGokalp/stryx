@@ -8290,7 +8290,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "XCVR_HC-SR04"
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Vertical"
 			(at 167.64 68.58 0)
 			(hide yes)
 			(show_name no)
