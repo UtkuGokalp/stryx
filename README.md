@@ -51,6 +51,7 @@ Current plans to improve this project are in the following order:
 |Omnidirectional Wheels|2|
 |LM317T Voltage regulator |1|
 |1N4001|3|
+|1N5822|1|
 |0.1uF ceramic capacitor|2|
 |1uF polarized capacitor|1|
 |10uF polarized capacitor|1|
@@ -64,6 +65,7 @@ Current plans to improve this project are in the following order:
 |3200mAh Li-ion batteries|3|
 |3S Li-ion battery holder|1|
 |Switch (SPDT)|1|
+|Screw Terminals|3|
 |Rubber Wheels with D-Shaft connections|2|
 |M3 screws, nuts, spacers and cables|various amounts|
 
