@@ -6975,7 +6975,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "016a8f88-3e9e-4a81-b4c0-2a7766b17146")
-		(property "Reference" "D3"
+		(property "Reference" "D5"
 			(at 273.05 116.7698 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7045,7 +7045,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "D3")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -7301,7 +7301,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bee84f8-0812-4696-99a2-7a7b1e9fbee8")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR03"
 			(at 83.82 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -7361,7 +7361,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR01")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -7379,7 +7379,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1496440c-e986-4d1c-adcc-77c7df468daf")
-		(property "Reference" "BT3"
+		(property "Reference" "BT1"
 			(at 25.4 24.7014 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7443,7 +7443,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "BT3")
+					(reference "BT1")
 					(unit 1)
 				)
 			)
@@ -7460,7 +7460,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1524026e-e04f-45f1-bfd2-a084010105fb")
-		(property "Reference" "U3"
+		(property "Reference" "U4"
 			(at 185.42 22.352 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7602,7 +7602,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "U3")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -7620,7 +7620,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1fbf1270-0b2a-41e0-8b68-6cc56e8c41f0")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR015"
 			(at 252.73 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7680,7 +7680,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR017")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -7697,7 +7697,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "203f9552-b4c7-4c6e-8561-62525f5c3add")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR012"
 			(at 200.66 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -7757,7 +7757,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR04")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -7775,7 +7775,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20b7c6fb-5532-4339-b462-5d93c1bc6ad5")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR010"
 			(at 162.56 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -7835,7 +7835,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR013")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -7852,7 +7852,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "213b6625-4bca-4b77-ab37-9a4a55245c6d")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR017"
 			(at 260.35 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -7912,7 +7912,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR011")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -7929,7 +7929,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "30ed1c8b-847f-4098-8638-4e2924cc3809")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR07"
 			(at 143.51 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -7989,7 +7989,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR018")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -8007,7 +8007,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "410561a1-2bff-4cbf-bd57-f39926d4e3e2")
-		(property "Reference" "D2"
+		(property "Reference" "D3"
 			(at 55.88 87.6299 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8093,7 +8093,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -8189,7 +8189,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4d5761ff-94ca-4496-998a-2773a57adb4c")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR011"
 			(at 168.91 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -8250,7 +8250,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR03")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -8268,7 +8268,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "55d059de-290e-4847-92b5-a743e78da279")
-		(property "Reference" "U4"
+		(property "Reference" "U3"
 			(at 181.61 68.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8352,7 +8352,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "U4")
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -8460,7 +8460,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6945fb8a-fb03-4a48-bde0-6e1e312dcc52")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR016"
 			(at 260.35 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -8520,7 +8520,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR010")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -8538,7 +8538,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6bb6f217-51cb-4d16-8769-5f3e377fce5a")
-		(property "Reference" "J1"
+		(property "Reference" "J4"
 			(at 262.89 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8612,7 +8612,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "J1")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -8629,7 +8629,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6d2e3eff-6e67-4c58-a324-28c6cbd1c3dd")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR08"
 			(at 157.48 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -8689,7 +8689,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR05")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -8706,7 +8706,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f1c0c20-0c56-44c1-80e4-064578917a08")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR06"
 			(at 139.7 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -8766,7 +8766,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR09")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -8784,7 +8784,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7666cff7-8a09-4b0e-96bc-892eb6997ea2")
-		(property "Reference" "BT1"
+		(property "Reference" "BT3"
 			(at 25.4 39.9414 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8848,7 +8848,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "BT1")
+					(reference "BT3")
 					(unit 1)
 				)
 			)
@@ -8947,7 +8947,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "82341498-a75f-44d4-b403-a05257967c7f")
-		(property "Reference" "J1"
+		(property "Reference" "J3"
 			(at 161.036 41.656 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9009,7 +9009,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "J1")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -9240,7 +9240,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a7f979d-588c-4412-98cb-705675076fcb")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR014"
 			(at 252.73 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -9300,7 +9300,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR019")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -9483,7 +9483,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a304058e-606e-4ee8-ab34-2b295bbd3280")
-		(property "Reference" "J3"
+		(property "Reference" "J1"
 			(at 97.79 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9545,7 +9545,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "J3")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -9563,7 +9563,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6519cf7-543e-43b7-a0bc-c9b42ca78b26")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR013"
 			(at 247.65 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -9623,7 +9623,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR012")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -9854,7 +9854,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aebf06ac-0c89-4184-ba67-5128b6983828")
-		(property "Reference" "R2"
+		(property "Reference" "R1"
 			(at 48.26 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9918,7 +9918,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "R2")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -9936,7 +9936,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af5b1df1-96dc-4a9f-a82e-b0f2f96fcf5b")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR018"
 			(at 262.89 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -9996,7 +9996,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR015")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -10094,7 +10094,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba7f6915-da90-4e39-956b-7cb84392a06f")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR019"
 			(at 271.78 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -10154,7 +10154,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR016")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -10171,7 +10171,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ba82cd3c-c089-4385-acb2-2d6eaed9e41b")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR09"
 			(at 162.56 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -10231,7 +10231,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR014")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -10249,7 +10249,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf164cc3-396c-41de-826a-57f2a59ef0eb")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR04"
 			(at 102.87 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -10309,7 +10309,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR020")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -10327,7 +10327,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfb6c626-aef6-408b-9f1f-b3e522506ef2")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR02"
 			(at 63.5 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -10387,7 +10387,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR07")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -10405,7 +10405,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c52da3c8-ee07-42a0-95c5-8e6b9dba3468")
-		(property "Reference" "D4"
+		(property "Reference" "D1"
 			(at 28.2575 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10467,7 +10467,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "D4")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -10485,7 +10485,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5cbac99-4bd9-4d44-b0a4-93cb45a2acf6")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 68.58 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10549,7 +10549,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -10646,7 +10646,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8dca1d8-64a3-4ac3-ad42-a772a6e8af45")
-		(property "Reference" "D1"
+		(property "Reference" "D2"
 			(at 45.72 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10730,7 +10730,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "D1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -10932,7 +10932,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d49062c1-5e43-492a-8ec7-be5828f54280")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR01"
 			(at 45.72 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -10992,7 +10992,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR02")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -11090,7 +11090,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d70dafc9-a105-400c-b927-803e630aa111")
-		(property "Reference" "D3"
+		(property "Reference" "D4"
 			(at 262.89 110.4899 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11176,7 +11176,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "D3")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -11194,7 +11194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d75fd74b-3a7c-4101-9047-4f7175fae694")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR05"
 			(at 138.43 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -11254,7 +11254,7 @@
 		(instances
 			(project "stryx"
 				(path "/aa341bb8-bb09-4afa-8a5c-654206316a4d"
-					(reference "#PWR06")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
