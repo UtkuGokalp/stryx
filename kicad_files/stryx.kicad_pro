@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 3.2,
+          "height": 5.6,
+          "width": 5.6
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -70,7 +70,20 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|139212500|100545000|bcec3ee3-7490-415c-b9f6-6466ba97bc01|f2204dbe-7c73-487e-aad0-624b728cd6f7",
+          "Mounting MCU board with female headers will gave enough clearance for this component to be mounted under the MCU board"
+        ],
+        [
+          "courtyards_overlap|142905000|100545000|a1ce76ec-efcc-42bb-9c62-ebb3c895c5ab|f2204dbe-7c73-487e-aad0-624b728cd6f7",
+          "Mounting MCU board with female headers will gave enough clearance for this component to be mounted under the MCU board"
+        ],
+        [
+          "courtyards_overlap|149500473|100355000|61a42190-57dd-4550-ab81-77cccabd1991|f2204dbe-7c73-487e-aad0-624b728cd6f7",
+          "Mounting MCU board with female headers will gave enough clearance for this component to be mounted under the MCU board"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -529,7 +542,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../../../Desktop/stryx.stl",
       "svg": "",
       "vrml": ""
     },
